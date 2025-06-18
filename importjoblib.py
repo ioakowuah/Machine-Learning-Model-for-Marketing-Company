@@ -5,7 +5,7 @@ from io import BytesIO
 
 # Load trained model
 def load_model():
-    url = 'https://huggingface.co/ioakowuah/classificationmodelnew/resolve/main/RandomForestClassifier_model%20(10).pkl'
+    url = 'https://huggingface.co/ioakowuah/classificationmodel2/resolve/main/RandomForestClassifier_model%20(11).pkl'
     response = requests.get(url)
     model = joblib.load(BytesIO(response.content))
     return model
